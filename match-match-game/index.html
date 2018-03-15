@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8">
+		<title>Match-match Game</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script src="javascript/Game.js" type="text/javascript"></script>
+		<script src="javascript/Card.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<main class="content">
+			<header class="header">
+				<form>
+					<select class="selection level" required>
+						<option value="">Change level</option>
+			            <option value="3x2">Easy</option>
+			            <option value="4x3">Medium</option>
+			            <option value="6x3">Hard</option>
+	          		</select>
+					<select class="selection cover" required>
+						<option value="">Change cards cover</option>
+			            <option value="princess">Princesses</option>
+			            <option value="chunkies">Chunkies</option>
+			            <option value="smeshariki">Smeshariki</option>
+	          		</select>
+	          		<button type="submit" class="start-button">Start New Game</button>
+	          	</form>
+	          	<form name=StopWatchForm>
+	          		<input name=stopwatch class="stopwatch" value="00:00:00" disabled>
+	          	</form>
+			</header>
+			<section class="rules">
+				<h1>MATCH-MATCH GAME!</h1>
+				In this game your objective is to find pairs of cards.When the game begins all pictures are hidden.</br>You can select complexity of the game and cards cover.
+				<H2>How to play:</H2>
+				<ul>
+					<li>Turn over one card and then try to find a matching card.</li>
+					<li>Use your memory to recall the position of matching pairs.</li>
+					<li>If the cards don't match, they are turned back over.</li>
+					<li>The game ends when the last pair has been picked up.</li>
+					<li>Have fun! :)</li>
+				</ul>
+			</section>
+			<section class="game-board hidden">
+			</section>
+			<section class="game-end-section hidden">
+				<p class="game-end-congrats"></p>
+			</section>
+			<script src="javascript/match-match-game.js" type="text/javascript"></script>
+	</body>
+</html>

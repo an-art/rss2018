@@ -1,0 +1,249 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url(../images/background.png);
+	background-size: 100%;
+	font: 12pt Arial, sans-serif;
+	letter-spacing: 1.2px;
+}
+
+.header {
+	width: 100%;
+	height: 50px;
+	padding-top: 10px;
+	position: relative;
+}
+
+.selection, .start-button {
+	width: 250px;
+	height: 30px;
+	background: #F9FBB6;
+    margin-left: 50px;
+    border-radius: 10px;
+    color: #574894;
+    font-size: 20px;
+}
+
+.start-button {
+	width: 200px;
+	position: absolute;
+	right: 250px;
+}
+
+.stopwatch {
+	width: 150px;
+	height: 20px;
+	right: 50px;
+	background: transparent;
+	text-align: center;
+	font-size: 26px;
+	border: none;
+	color: #F9FBB6;
+	position: absolute;
+	top: 10px;
+}
+
+.rules {
+	margin: 0 auto;
+	width: 700px;
+	height: 500px;
+	background-color: rgba(255, 255, 255, 0.1);
+	box-shadow: 6px 10px 32px 1px rgba(0,0,0,0.46);
+	padding: 10px 30px;
+	text-align: center;
+	color: #574894;
+	line-height: 20px;
+	padding: 50px 30px;
+	box-sizing: border-box;
+}
+
+.rules h1 {
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+
+.rules ul {
+	list-style-type: none;
+}
+
+.game-board {
+	margin: 0 auto;
+}
+
+.flip-container {
+	width: 120px;
+	height: 160px;
+	border-radius: 20%;
+	float: left;
+	margin: 20px;
+	box-sizing: border-box;
+	perspective: 1000px;
+	transition: 0.5s;
+	transform-style: preserve-3d;
+}
+
+.flip-container.clicked .front {
+  	transform: rotateY(180deg);
+}
+
+.flip-container.clicked .back {
+  	transform: rotateY(0deg);
+}
+
+.front, .back {
+	width:100%;
+	height:100%;
+	display: block;
+	backface-visibility: hidden;
+	transition: 0.5s;
+	transform-style: preserve-3d;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 5%;
+	background-position:50% 50%;
+	background-repeat: no-repeat;
+}
+
+.front {
+	transform: rotateY(0deg);
+	background-size: contain;
+}
+
+.back {
+	transform: rotateY(-180deg);
+}
+
+.disappear {
+        opacity: 0;
+        transition: opacity 2s;
+}
+
+.game-end-section {
+	position: fixed;
+	pointer-events: none;
+	width: 100%;
+	top: 30%;
+	padding: 30px 0;
+	text-align: center;
+	background: rgba(249, 251, 182, .7);
+	color: #574894;
+	font-size: 30px; 
+	font-weight: bold;
+	box-sizing: border-box;
+}
+
+.hidden {
+	display: none;
+}
+
+.card-smeshariki-1 {
+	background: url(../images/smeshariki.png) -15px 0;
+}
+
+.card-smeshariki-2 {
+	background: url(../images/smeshariki.png) -147px 0;
+}
+
+.card-smeshariki-3 {
+	background: url(../images/smeshariki.png) -430px 0px;
+}
+
+.card-smeshariki-4 {
+	background: url(../images/smeshariki.png) -15px -300px;
+}
+
+.card-smeshariki-5 {
+	background: url(../images/smeshariki.png) -15px -146px;
+}
+
+.card-smeshariki-6 {
+	background: url(../images/smeshariki.png) -300px -150px;
+}
+
+.card-smeshariki-7 {
+	background: url(../images/smeshariki.png) -147px -150px;
+}
+
+.card-smeshariki-8 {
+	background: url(../images/smeshariki.png) -430px -155px;
+}
+
+.card-smeshariki-9 {
+	background: url(../images/smeshariki.png) -425px -300px;
+}
+
+.card-princess-1 {
+	background: url(../images/princess.png) 0 5px;
+}
+
+.card-princess-2 {
+	background: url(../images/princess.png) -100px 5px;
+}
+
+.card-princess-3 {
+	background: url(../images/princess.png) -485px 5px;
+}
+
+.card-princess-4 {
+	background: url(../images/princess.png) -100px -146px;
+}
+
+.card-princess-5 {
+	background: url(../images/princess.png) 5px -146px;
+}
+
+.card-princess-6 {
+	background: url(../images/princess.png) -290px 5px;
+}
+
+.card-princess-7 {
+	background: url(../images/princess.png) -217px -146px;
+}
+
+.card-princess-8 {
+	background: url(../images/princess.png) -195px 5px;
+}
+
+.card-princess-9 {
+	background: url(../images/princess.png) -385px 5px;
+}
+
+.card-chunkies-1 {
+	background: url(../images/chunkies.png) -27px 0;
+}
+
+.card-chunkies-2 {
+	background: url(../images/chunkies.png) -22px -190px;
+}
+
+.card-chunkies-3 {
+	background: url(../images/chunkies.png) -195px -10px;
+}
+
+.card-chunkies-4 {
+	background: url(../images/chunkies.png) -550px 0;
+}
+
+.card-chunkies-5 {
+	background: url(../images/chunkies.png) -200px -185px;
+}
+
+.card-chunkies-6 {
+	background: url(../images/chunkies.png) -375px -185px;
+}
+
+.card-chunkies-7 {
+	background: url(../images/chunkies.png) -365px 0;
+}
+
+.card-chunkies-8 {
+	background: url(../images/chunkies.png) -545px -187px;
+}
+
+.card-chunkies-9 {
+	background: url(../images/chunkies.png) -20px -375px;
+}
